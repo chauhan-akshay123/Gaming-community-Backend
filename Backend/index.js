@@ -6,6 +6,8 @@ let { open } = require("sqlite");
 let app = express();
 let PORT = process.env.PORT || 3000;
 
+let db;
+
 // Middleware
 app.use(cors());
 app.use(express.json());
